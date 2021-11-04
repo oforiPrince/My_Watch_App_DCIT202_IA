@@ -5,6 +5,8 @@ import {AntDesign} from 'react-native-vector-icons'
 
 const detailScreen = ({navigation, route}) =>{
     const watch = route.params;
+    const [loading, setLoading] = React.useState(false);
+
     return(
         <SafeAreaView style={{flex:1,backgroundColor:'white',paddingHorizontal:10,marginTop:20,}}>
             <View style={{
@@ -57,16 +59,30 @@ const detailScreen = ({navigation, route}) =>{
             </View >
             <View style={{flex:0.45,backgroundColor:'#F3E6DE', marginBottom:7, borderRadius:20, marginTop:20,paddingTop:30}}>
             </View>
-            <TouchableOpacity>
-                <View style={{alignItems:'center',justifyContent:'center', flexDirection:'row',paddingVertical:10}}>
-                <Text style={{fontSize:17, fontWeight:'bold'}}>
-                    Add to Cart -
-                </Text>
-                <Text style={{fontSize:17, fontWeight:'bold'}}>
-                      {watch.price}
-                </Text>
-                </View>
-            </TouchableOpacity>
+            <TouchableOpacity
+            disabled={loading ? true : false}
+            style={{ backgroundColor: "#f07e05", marginHorizontal:100,padding:10,borderRadius:10 }}
+            activeOpacity={0.8}
+            onPress={() => {
+              navigation.navigate('Home')
+              setLoading(!loading);
+            }}
+          >
+            {!loading ? (
+              <Text
+                style={{
+                  alignSelf: "center",
+                  color: "white",
+                  fontSize: 20,
+                  fontWeight:'bold'
+                }}
+              >
+                View Cart
+              </Text>
+            ) : (
+              <ActivityIndicator color="white" />
+            )}
+          </TouchableOpacity>
         </SafeAreaView>
     );
 }
