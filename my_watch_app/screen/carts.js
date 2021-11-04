@@ -63,14 +63,34 @@ const Cart = ({ navigation, route }) => {
                 <Image
                 style={{ height: 100, width: 100, resizeMode:'contain' }}
                 source= {item.img}/>
-                <View style={{ flex: 1, paddingHorizontal: 10 }}>
-                  <Text style={styles.watchName}>
+                <View style={{ flex: 1, paddingHorizontal: 10,marginTop:10}}>
+                  <View>
+                    <Text style={{color:'orange'}}>
+                      {item.description}
+                    </Text>
+                  </View>
+                  <View style={{flexDirection:'row',marginTop:5}}>
+                  <Text >
+                    Gender:
+                  </Text>                
+                  <Text style={{}}>
+                      {" "}
                       {item.gender}
                   </Text>
-                  <View style={styles.price_container}>
-                  <Text style={styles.price}>
+                  </View>
+                  <View style={{flexDirection:'row',paddingTop:5}}>
+                  <Text>
+                    Price:
+                  </Text>
+                  <Text>
+                   {item.currency}
+                  </Text>
+                  <View style={{}}>
+                  <Text style={{}}>
+                      {" "}
                       {item.price}
                   </Text>
+                  </View>
                   </View>
                 </View>
               </View>

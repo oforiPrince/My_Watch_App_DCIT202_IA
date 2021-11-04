@@ -19,10 +19,10 @@ const home =({navigation}) => {
         return <View style={{flexDirection:'row', marginTop:10, marginBottom:5,justifyContent:'space-between',}}>
             {categories.map((item,index) => (
                     <View key={index} style={{backgroundColor:'#f6f6f6', borderRadius:8,}}>
-                         <TouchableOpacity onPress={(key)=>setCategoryIndex(index)} >
+                         <View onPress={(key)=>setCategoryIndex(index)} >
                         <Text  style={{fontWeight:'bold',padding:8, color:'#bdbdbd',fontSize:15}}
                         >{item}</Text>
-                        </TouchableOpacity>
+                        </View>
                     </View>
             ))}
         </View>;
@@ -175,10 +175,7 @@ const home =({navigation}) => {
         renderItem={({item, index}) => 
         (
           <SafeAreaView style={styles.container}>
-          <TouchableOpacity
-             onPress={()=>navigation.navigate("Details", item)}
-    
-          >
+          
            <View style={{alignItems:'flex-end'}}>
                <View style={{width:30,
                             height:30,
@@ -189,13 +186,14 @@ const home =({navigation}) => {
                    <MaterialIcons name='favorite' size={19} color={item.like? 'red':'black'}/>
                </View>
            </View>
+           <TouchableOpacity
+             onPress={()=>navigation.navigate("Details", item)}>
           <View style={styles.img}>
           <Image
            style = {styles.image}
-           source= {item.img}
-          />
-
+           source= {item.img}/>
           </View> 
+          </TouchableOpacity>
           <Text style={styles.watchName}>
                {item.gender}
           </Text>
@@ -206,11 +204,7 @@ const home =({navigation}) => {
           <Text style={styles.price}>
               {item.price}
           </Text>
-          {/*<View style={styles.add_container}>
-           <Text style={styles.add_sign}>+</Text>
-          </View>*/}
           </View>
-          </TouchableOpacity>
           {cart.includes(item) ? (
                   <TouchableOpacity
                     activeOpacity={0.8}

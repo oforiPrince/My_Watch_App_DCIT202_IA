@@ -3,6 +3,7 @@ const watches= [
         id:1,
         img: require('../../assets/images/watches/both1.png'),
         brand:'Yazole',
+        description:'Latest explosion models flash power watch',
         gender: 'Men & Women',
         price: 150.99,
         like: true,
