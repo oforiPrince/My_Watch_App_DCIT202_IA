@@ -2,7 +2,7 @@ import React from 'react';
 import { View,Image, Text,TouchableOpacity, SafeAreaView, } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {AntDesign} from 'react-native-vector-icons'
-
+import Home from './home'
 const detailScreen = ({navigation, route}) =>{
     const watch = route.params;
     const [loading, setLoading] = React.useState(false);
@@ -57,31 +57,27 @@ const detailScreen = ({navigation, route}) =>{
             <View style={{flex:0.45,marginTop:10,justifyContent:'center',alignItems:'center',padding:10}}>
                 <Image source={watch.img} style={{resizeMode:'contain',flex:1}}/>
             </View >
-            <View style={{flex:0.45,backgroundColor:'#F3E6DE', marginBottom:7, borderRadius:20, marginTop:20,paddingTop:30}}>
+            <View style={{flex:0.45,backgroundColor:'#F3E6DE', marginBottom:7, borderRadius:10, marginTop:20,}}>
             </View>
             <TouchableOpacity
-            disabled={loading ? true : false}
             style={{ backgroundColor: "#f07e05", marginHorizontal:100,padding:10,borderRadius:10 }}
             activeOpacity={0.8}
             onPress={() => {
               navigation.navigate('Home')
-              setLoading(!loading);
             }}
           >
-            {!loading ? (
-              <Text
-                style={{
-                  alignSelf: "center",
-                  color: "white",
-                  fontSize: 20,
-                  fontWeight:'bold'
-                }}
-              >
-                View Cart
-              </Text>
-            ) : (
-              <ActivityIndicator color="white" />
-            )}
+          <Text
+            style={{
+              marginTop:10,
+              alignSelf: "center",
+              color: "white",
+              fontSize: 15,
+              fontWeight:'bold',
+              justifyContent:'center',
+              alignItems:'center'
+            }}>
+              Continue Shopping
+          </Text>
           </TouchableOpacity>
         </SafeAreaView>
     );

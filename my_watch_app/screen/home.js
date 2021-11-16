@@ -101,12 +101,7 @@ const home =({navigation}) => {
     <View style={{backgroundColor:'white', paddingTop:10,  flex:1, paddingHorizontal:10,marginTop:20,}}>
       <SafeAreaView style={{ flexDirection:'row', justifyContent:'space-between',alignItems:'center', marginBottom:15, backgroundColor:'white',}}>
         <Ionicons name="settings-outline" size={27} color="black" />
-      {/*<View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-        {/*<AntDesign name="search1" size={24} color="black" />
-        <FontAwesome name="user-circle-o" size={24} color="black" />
-      </View>*/}
         <TouchableOpacity
-        //onPress={() => navigation.navigate("Cart", { cart })}
         style={{
           height: 40,
           width: 50,
@@ -142,9 +137,6 @@ const home =({navigation}) => {
         />
       </TouchableOpacity>
       </SafeAreaView>
-
-      
-
       <View >
         <View style={{flexDirection: 'column', marginBottom:10}}>
             <Text style={{fontSize:23,  fontWeight:'bold', color:'#bdbdbd'}}>Discover Our exclusive</Text>
@@ -154,13 +146,6 @@ const home =({navigation}) => {
         <View>
             <CategoryList/>
         </View>
-      {/*<ScrollView>
-        <watch watch={watch1}/>
-        <watch watch={watch2}/>
-        <watch watch={watch3}/>
-        <watch watch={watch4}/>
-      </ScrollView>
-      */}
       <View style={{height:'80%'}}>
         <FlatList 
         columnWrapperStyle={{justifyContent: 'space-between'}}

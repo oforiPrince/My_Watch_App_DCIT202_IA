@@ -7,6 +7,9 @@ import Login from './screen/login'
 import Home from './screen/home'
 import Details from './screen/details'
 import SignUp from './screen/signUp';
+import CheckOut from './screen/CheckoutScreen1'
+import Finish from './components/Finish'
+
 export default function App() {
   const MainNavigator = createNativeStackNavigator();
   return (
@@ -18,6 +21,8 @@ export default function App() {
           <MainNavigator.Screen name = 'Details' component ={Details}/>
           <MainNavigator.Screen name = 'Carts' component ={Carts}/>
           <MainNavigator.Screen name = 'SignUp' component = {SignUp}/>
+          <MainNavigator.Screen name = 'CheckOut' component = {CheckOut}/>
+          
         </MainNavigator.Navigator>
       </NavigationContainer>
     </View>

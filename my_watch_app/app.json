@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "powerBikeApp",
-    "slug": "powerBikeApp",
+    "name": "My_Watch_App",
+    "slug": "My_Watch_App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

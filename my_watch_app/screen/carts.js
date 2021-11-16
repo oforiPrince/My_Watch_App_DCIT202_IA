@@ -27,13 +27,12 @@ const Cart = ({ navigation, route }) => {
     <View style={{ paddingHorizontal: 20, flex: 1,marginTop:18,backgroundColor:'#F3E6DE' }}>
       <StatusBar backgroundColor="black" barStyle="light-content" />
       <Text
-        style={{ textAlign: "center", fontSize: 25,fontWeight:'bold' }}
-      >
+        style={{ textAlign: "center", fontSize: 25,fontWeight:'bold' }}>
         <Text style={{ color: "orange" }}>My</Text> Shopping Cart
       </Text>
 
       {route.params.cart.length == 0 ? (
-        <View style={{ justifyContent: "center", alignItems: "center" }}>
+        <View style={{ justifyContent: "center", alignItems: "center",paddingTop:'50%' }}>
           <Lottie
             ref={(lottie) => (lottieRef = lottie)}
             style={{ height: 200, width: 200 }}
@@ -45,8 +44,9 @@ const Cart = ({ navigation, route }) => {
         </View>
       ) : (
         <View>
-          <View style={{height:'75%'}}>
+          <View style={{height:'83%'}}>
           <FlatList
+            showsVerticalScrollIndicator={false}
             style={{ paddingVertical: 10 }}
             data={cart}
             renderItem={({ item, index }) => (
@@ -123,7 +123,7 @@ const Cart = ({ navigation, route }) => {
             style={{ backgroundColor: "#f07e05", marginHorizontal:100,padding:10,borderRadius:10 }}
             activeOpacity={0.8}
             onPress={() => {
-              navigation.navigate('Home')
+              navigation.navigate('CheckOut')
               setLoading(!loading);
             }}
           >
