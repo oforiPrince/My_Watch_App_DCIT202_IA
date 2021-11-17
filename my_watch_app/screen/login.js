@@ -36,8 +36,8 @@ const login =({navigation})=> {
               }}/>
         </View>
         <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center',}}>
-        <Feather name='user' color='grey' size={24}/>
-          <TextInput placeholder='Username or Email' placeholder="Password" underlineColorAndroid={'transparent'} secureTextEntry={true}
+        <FontAwesome name='lock' color='grey' size={24}/>
+          <TextInput placeholder="Password" underlineColorAndroid={'transparent'} secureTextEntry={true}
             style={{
               borderRadius: 15,
               fontSize:17,
