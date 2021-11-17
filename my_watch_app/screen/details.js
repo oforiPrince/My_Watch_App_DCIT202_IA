@@ -41,7 +41,7 @@ const detailScreen = ({navigation, route}) =>{
             </View>
             <View style={{flex:0.45,backgroundColor:'#F3E6DE', marginBottom:7, borderRadius:10, marginTop:20,paddingLeft:10,}}>
               <View style={{flexDirection:'row',alignItems:'center', marginTop:15,marginBottom:5}}>
-              <Text style={{fontSize:18}}>  
+              <Text style={{fontSize:17,fontWeight:'bold'}}>  
                 {watch.name}
               </Text>
               <Text style={{fontSize:18}}>  
@@ -95,7 +95,6 @@ const detailScreen = ({navigation, route}) =>{
           >
           <Text
             style={{
-              marginTop:10,
               alignSelf: "center",
               color: "white", 
               fontSize: 15,
