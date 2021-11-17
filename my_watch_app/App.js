@@ -8,7 +8,6 @@ import Home from './screen/home'
 import Details from './screen/details'
 import SignUp from './screen/signUp';
 import CheckOut from './screen/CheckoutScreen1'
-import Finish from './components/Finish'
 
 export default function App() {
   const MainNavigator = createNativeStackNavigator();

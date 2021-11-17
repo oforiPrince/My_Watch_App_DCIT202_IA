@@ -18,32 +18,14 @@ const detailScreen = ({navigation, route}) =>{
             }}>
                 <Icon name='arrow-back' size={26} onPress={() =>navigation.goBack()}/>
                 <TouchableOpacity
-        //onPress={() => navigation.navigate("Cart", { cart })}
-        style={{
-          height: 40,
-          width: 50,
-          //backgroundColor: "white",
-          borderRadius: 35,
-          position: "absolute",
-          right: 0,
-          //margin: 15,
-        }}
-      >
-        <View
-          style={{
-            height: 20,
-            width: 20,
-            backgroundColor: "#f07e05",
-            borderRadius: 10,
-            position: "absolute",
-            right: 0,
-            elevation: 3,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Text style={{ color: "white" }}>0</Text>
-        </View>
+                    style={{
+                      height: 40,
+                      width: 50,
+                      borderRadius: 35,
+                      position: "absolute",
+                      right: 0,
+                    }}>
+        
 
         <AntDesign
           style={{ alignSelf: "center", top: 15 }}
@@ -56,9 +38,54 @@ const detailScreen = ({navigation, route}) =>{
             
             <View style={{flex:0.45,marginTop:10,justifyContent:'center',alignItems:'center',padding:10}}>
                 <Image source={watch.img} style={{resizeMode:'contain',flex:1}}/>
-            </View >
-            <View style={{flex:0.45,backgroundColor:'#F3E6DE', marginBottom:7, borderRadius:10, marginTop:20,}}>
             </View>
+            <View style={{flex:0.45,backgroundColor:'#F3E6DE', marginBottom:7, borderRadius:10, marginTop:20,paddingLeft:10,}}>
+              <View style={{flexDirection:'row',alignItems:'center', marginTop:15,marginTop:5}}>
+              <Text style={{fontSize:18}}>  
+                {watch.name}
+              </Text >
+              <Text style={{fontSize:18}}>  
+                {" - "}
+                {watch.color}
+              </Text>
+              </View>
+              <Text style={{fontSize:15, color:"orange"}}>  
+                {watch.description}
+              </Text>
+              <View style={{flexDirection:'row',alignItems:'center', marginTop:15,marginTop:5}}>
+              <Text>  
+                Brand
+              </Text>
+              <Text style={{fontSize:15, }}>  
+                {" : "}
+                {watch.brand}
+              </Text>
+              </View>
+              <View style={{flexDirection:'row',alignItems:'center', marginTop:15,marginTop:5}}>
+              <Text>  
+                Gender
+              </Text>
+              <Text style={{fontSize:15, }}>  
+                {" : "}
+                {watch.gender}
+              </Text>
+              </View>
+              <View style={{flexDirection:'row',alignItems:'center', marginTop:15,marginTop:5}}>
+              <Text>  
+                Price
+              </Text>
+              <Text>
+                {" : "}  
+                {watch.currency}
+              </Text>
+              <Text> 
+                {" "} 
+                {watch.price}
+              </Text>
+              </View>
+            </View>
+            
+            
             <TouchableOpacity
             style={{ backgroundColor: "#f07e05", marginHorizontal:100,padding:10,borderRadius:10 }}
             activeOpacity={0.8}
