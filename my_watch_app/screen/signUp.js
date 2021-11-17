@@ -2,7 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TextInput, View, ScrollView, TouchableOpacity, Alert, ImageBackground } from 'react-native';
 import {useState} from 'react';
-
 import { Ionicons, FontAwesome, AntDesign,MaterialIcons } from '@expo/vector-icons';
 
 
@@ -11,16 +10,12 @@ export default function SignUp({navigation}) {
 
   return (
     <View style={styles.container}>
-        <ImageBackground source={require('../assets/images/login_bg_image.png')} resizeMode="cover" style={{flex:1,width: undefined, height: undefined}}>
 
       <Text style={styles.header}>SIGN UP</Text>
       <View style={styles.inputs}>
-      {/*<TextInput style={styles.textInputs} placeholder="First Name" underlineColorAndroid={'transparent'}/>
-      <TextInput style={styles.textInputs} placeholder="Last Name" underlineColorAndroid={'transparent'}/>
-  */}
       <View style={{marginBottom:10}}>
       <View style={styles.email_pass}>
-      <MaterialIcons name='email' size= {18} color='white'/>
+      <MaterialIcons name='email' size= {18} color='black'/>
       <Text style={{fontWeight:'bold',marginHorizontal:10}}>EMAIL</Text>
       </View>
       <TextInput style={styles.textInputs} placeholder="Enter Email" underlineColorAndroid={'transparent'}/>
@@ -37,7 +32,7 @@ export default function SignUp({navigation}) {
         navigation.navigate('Login')
       }}
       >
-        <View style={{backgroundColor:'blue',borderRadius:15,alignItems:'center',justifyContent:'center', marginTop:10}}>
+        <View style={{backgroundColor:'gray',borderRadius:15,alignItems:'center',justifyContent:'center', marginTop:10}}>
         <Text style={styles.btn_text}>SIGNUP</Text>
         </View>
       </TouchableOpacity>
@@ -47,12 +42,12 @@ export default function SignUp({navigation}) {
           navigation.navigate('Login')
         }}
         >
-          <Text style={{fontSize:15,fontWeight:'500',color:'white'}}>
+          <Text style={{fontSize:15,fontWeight:'500',color:'orange'}}>
             SIGN IN
           </Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={register}>
-          <Text style={{fontSize:15,fontWeight:'500',color:'white'}}>
+          <Text style={{fontSize:15,fontWeight:'500',color:'orange'}}>
             CONFIRM CODE
           </Text>
         </TouchableOpacity>
@@ -60,7 +55,6 @@ export default function SignUp({navigation}) {
       </View>
       
       <StatusBar style="auto" />
-      </ImageBackground>
     </View>
   );
 }
@@ -70,7 +64,7 @@ const styles = StyleSheet.create({
     flex:1,
     marginTop:17,
     alignSelf:'stretch',   
-    backgroundColor:'rgba(0,0,0,0.5)' 
+    backgroundColor:'#F3E6DE' 
   },
   email_pass:{
     flexDirection:'row',
@@ -113,8 +107,5 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     paddingVertical:10,
   },
-  gender:{
-    color:"#fff",
-    marginVertical:10,
-  }
+  
 });

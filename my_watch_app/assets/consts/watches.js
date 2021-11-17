@@ -200,4 +200,4 @@ const watches= [
         currency: 'GH¢'
     },
 ];
-export default watches;
+export default watches; 

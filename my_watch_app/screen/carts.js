@@ -123,7 +123,7 @@ const Cart = ({ navigation, route }) => {
             style={{ backgroundColor: "#f07e05", marginHorizontal:100,padding:10,borderRadius:10 }}
             activeOpacity={0.8}
             onPress={() => {
-              navigation.navigate('CheckOut')
+              navigation.navigate('CheckOut',{cart})
               setLoading(!loading);
             }}
           >

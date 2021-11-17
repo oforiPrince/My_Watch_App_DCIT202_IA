@@ -70,7 +70,7 @@ const detailScreen = ({navigation, route}) =>{
             style={{
               marginTop:10,
               alignSelf: "center",
-              color: "white",
+              color: "white", 
               fontSize: 15,
               fontWeight:'bold',
               justifyContent:'center',
@@ -82,5 +82,4 @@ const detailScreen = ({navigation, route}) =>{
         </SafeAreaView>
     );
 }
-
 export default detailScreen;
