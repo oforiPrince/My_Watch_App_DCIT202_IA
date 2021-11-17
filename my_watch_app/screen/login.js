@@ -55,8 +55,17 @@ const login =({navigation})=> {
             Forgotten Password?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity style={styles.btn} 
+          onPress={() =>{
+            navigation.navigate('Home')
+          }}
+          >
+        <View style={{backgroundColor:'orange',borderRadius:15,alignItems:'center',justifyContent:'center', marginTop:10}}>
+        <Text style={styles.btn_text}>Login</Text>
+        </View>
+      </TouchableOpacity>
         <View>
-          <Text style={{color:'orange', fontSize:15, }}>
+          <Text style={{color:'orange', fontSize:15,marginTop:5 }}>
             - or -
           </Text>
         </View>
@@ -97,7 +106,6 @@ const login =({navigation})=> {
             </TouchableOpacity>
         </View>
       </View>
-    {/*</ImageBackground>*/}
     </View>
   );
 }
@@ -128,6 +136,14 @@ const styles = StyleSheet.create({
     borderColor:"grey",
     paddingVertical:5,
     paddingHorizontal: 10,
+  },
+  btn_text:{
+    color:"white",
+    fontSize:15,
+    fontWeight:'bold',
+    paddingVertical:10,
+    paddingHorizontal:107,
+
   },
   
 });

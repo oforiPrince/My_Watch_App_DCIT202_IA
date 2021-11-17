@@ -10,8 +10,18 @@ export default function SignUp({navigation}) {
 
   return (
     <View style={styles.container}>
-
-      <Text style={styles.header}>SIGN UP</Text>
+      <View style={{alignItems:'center',justifyContent:'center',marginTop:100,marginBottom:30}}>
+            <View style={{flexDirection:'row'}}>
+            <Text style = { {color:'white', fontSize:25, fontWeight:"600"}}>
+              AmaZing 
+            </Text>
+            <View style={{paddingTop:25}}>
+            <Text style = { {color:'orange', fontSize:25, fontWeight:"600"}}>
+              WaTches 
+            </Text>
+            </View>
+            </View>            
+          </View>
       <View style={styles.inputs}>
       <View style={{marginBottom:10}}>
       <View style={styles.email_pass}>
@@ -32,7 +42,7 @@ export default function SignUp({navigation}) {
         navigation.navigate('Login')
       }}
       >
-        <View style={{backgroundColor:'gray',borderRadius:15,alignItems:'center',justifyContent:'center', marginTop:10}}>
+        <View style={{backgroundColor:'orange',borderRadius:15,alignItems:'center',justifyContent:'center', marginTop:10}}>
         <Text style={styles.btn_text}>SIGNUP</Text>
         </View>
       </TouchableOpacity>
@@ -64,7 +74,9 @@ const styles = StyleSheet.create({
     flex:1,
     marginTop:17,
     alignSelf:'stretch',   
-    backgroundColor:'#F3E6DE' 
+    backgroundColor:'#F3E6DE',
+    justifyContent:'center',
+    alignItems:'stretch'
   },
   email_pass:{
     flexDirection:'row',

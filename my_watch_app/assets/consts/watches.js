@@ -69,6 +69,7 @@ const watches= [
         gender: 'Men',
         price: 344.99,
         like: false,
+        currency: 'GH¢'
 
     },
     {
