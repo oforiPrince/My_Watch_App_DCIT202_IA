@@ -40,10 +40,10 @@ const detailScreen = ({navigation, route}) =>{
                 <Image source={watch.img} style={{resizeMode:'contain',flex:1}}/>
             </View>
             <View style={{flex:0.45,backgroundColor:'#F3E6DE', marginBottom:7, borderRadius:10, marginTop:20,paddingLeft:10,}}>
-              <View style={{flexDirection:'row',alignItems:'center', marginTop:15,marginTop:5}}>
+              <View style={{flexDirection:'row',alignItems:'center', marginTop:15,marginBottom:5}}>
               <Text style={{fontSize:18}}>  
                 {watch.name}
-              </Text >
+              </Text>
               <Text style={{fontSize:18}}>  
                 {" - "}
                 {watch.color}
@@ -52,7 +52,7 @@ const detailScreen = ({navigation, route}) =>{
               <Text style={{fontSize:15, color:"orange"}}>  
                 {watch.description}
               </Text>
-              <View style={{flexDirection:'row',alignItems:'center', marginTop:15,marginTop:5}}>
+              <View style={{flexDirection:'row',alignItems:'center', marginTop:5,marginBottom:5}}>
               <Text>  
                 Brand
               </Text>
@@ -61,7 +61,7 @@ const detailScreen = ({navigation, route}) =>{
                 {watch.brand}
               </Text>
               </View>
-              <View style={{flexDirection:'row',alignItems:'center', marginTop:15,marginTop:5}}>
+              <View style={{flexDirection:'row',alignItems:'center', marginTop:5,marginBottom:5}}>
               <Text>  
                 Gender
               </Text>

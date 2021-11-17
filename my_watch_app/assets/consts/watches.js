@@ -2,7 +2,7 @@ const watches= [
     {
         id:1,
         img: require('../../assets/images/watches/both1.png'),
-        name:"Analoq Quartz Wrist Watch",
+        name:"Analog Quartz Wrist Watch",
         color:'Black',
         brand:'Yazole',
         description:'Latest explosion models flash power watch',
@@ -14,7 +14,7 @@ const watches= [
     {
         id:2,
         img: require('../../assets/images/watches/both2.png'),
-        name:"Analoq Quartz Wrist Watch",
+        name:"Analog Quartz Wrist Watch",
         color:'Black',
         brand:'Generic',
         description:'Latest explosion models flash power watch',
@@ -26,7 +26,7 @@ const watches= [
     {
         id:3,
         img: require('../../assets/images/watches/both3.png'),
-        name:"Analoq Quartz Wrist Watch",
+        name:"Analog Quartz Wrist Watch",
         color:'Black',
         brand:'Generic',
         description:'Latest explosion models flash power watch',
@@ -38,7 +38,7 @@ const watches= [
     {
         id:4,
         img: require('../../assets/images/watches/both4.png'),
-        name:"Analoq Quartz Wrist Watch",
+        name:"Analog Quartz Wrist Watch",
         color:'Black',
         brand:'Generic',
         description:'Latest explosion models flash power watch',
@@ -50,7 +50,7 @@ const watches= [
     {
         id:5,
         img: require('../../assets/images/watches/both5.png'),
-        name:"Analoq Quartz Wrist Watch",
+        name:"Analog Quartz Wrist Watch",
         color:'Black',
         brand:'Generic',
         description:'Latest explosion models flash power watch',
@@ -62,7 +62,7 @@ const watches= [
     {
         id:6,
         img: require('../../assets/images/watches/men1.png'),
-        name:"Analoq Quartz Wrist Watch",
+        name:"Analog Quartz Wrist Watch",
         color:'Black',
         brand:'Generic',
         description:'Latest explosion models flash power watch',
@@ -74,7 +74,7 @@ const watches= [
     {
         id:7,
         img: require('../../assets/images/watches/men2.png'),
-        name:"Analoq Quartz Wrist Watch",
+        name:"Analog Quartz Wrist Watch",
         color:'Black',
         brand:'Generic',
         description:'Latest explosion models flash power watch',
@@ -86,7 +86,7 @@ const watches= [
     {
         id:8,
         img: require('../../assets/images/watches/men3.png'),
-        name:"Analoq Quartz Wrist Watch",
+        name:"Analog Quartz Wrist Watch",
         color:'Black',
         brand:'Generic',
         description:'Latest explosion models flash power watch',
@@ -98,7 +98,7 @@ const watches= [
     {
         id:9,
         img: require('../../assets/images/watches/women1.png'),
-        name:"Analoq Quartz Wrist Watch",
+        name:"Analog Quartz Wrist Watch",
         color:'Black',
         brand:'Generic',
         description:'Latest explosion models flash power watch',
